@@ -88,18 +88,17 @@ function catchItem(event) {
 
 //таблца результатов
 function stopGame(){
+    const names = JSON.parse(localStorage.getItem('userName') || "[]");
+    const scores = score;
+    const userInfo = {
+        names : userName,
+        scores : score
+    }
+    names.push(userInfo);
+    localStorage.setItem('names', JSON.stringify(names));
     $('section:eq(1)').hide();
     $('section:eq(2)').show();
+    
 };
 
-const names = JSON.parse(localStorage.getItem('userName') || "[]");
-const scores = score;
 
-const userInfo = {
-    names : userName,
-    scores : score
-  }
-
- names.push(userInfo);
-
- localStorage.setItem('names', JSON.stringify(names));
