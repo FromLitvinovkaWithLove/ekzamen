@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+}
+section:nth-child(1){
+    background: #bebebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section:nth-child(1) > h2{
+    font-size: 3rem;
+    color: darkgreen;
+    margin-bottom: 2rem;
+}
+section:nth-child(1) > input[type="text"]{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+
+}
+section:nth-child(1) > input[type="button"]{
+    padding: 0.5rem;
+    background-color: rgb(71, 170, 71);
+}
+section.gameBox{
+    background: #34344a;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.playTime{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.playTime>h2{
+    padding: 1.5rem;
+    color: khaki;
+    text-shadow: 2px 2px #000;
+}
+.playTime mark, .playTime p, .score{
+    color: khaki;
+    background: #34344a; 
+}
+.playTime > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.generation{
+    background: url(../img/forest.png);
+    width: 15rem;
+    height: 78vh;
+    background-size: contain;
+
+}
+.generation > img{
+    transform: rotate(90deg);
+    width: 40rem;
+    background: #bebebe;
+}
+/* .game{
+    width: 70rem;
+    height: 78rem;
+} */
+.catch{
+    background: url(../img/city.png);
+    width: 15rem;
+    height: 78vh;
+    background-size: contain;
+}
+.catch>img{
+    transform: rotate(90deg);
+    width: 20rem;
+} 
